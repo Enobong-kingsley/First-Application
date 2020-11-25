@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">First Application</string>
+    <string name="salary">Your Salary : </string>
+    <string name="heading">Monthly</string>
+    <string name="heading2">Employee Salary</string>
+    <string name="heading3">Calculator</string>
+    <string name="allowance">Your Allowance</string>
+    <string name="income">Your Tax Rate</string>
+    <string name="amount">Total Amount : </string>
+    <string name="click">Check your Balance</string>
+</resources>

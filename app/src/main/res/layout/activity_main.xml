@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/heading_1"
+                android:layout_width="215dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:paddingLeft="60dp"
+                android:paddingTop="10dp"
+                android:text="@string/heading"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/heading_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/heading_1"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/heading2"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent">
+            </TextView>
+
+            <TextView
+                android:id="@+id/heading_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/heading_2"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/heading3"
+                android:paddingLeft="133dp"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:paddingStart="133dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/heading_3"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/salary"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent">
+            </TextView>
+
+            <EditText
+                android:id="@+id/salary_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="number"
+                app:layout_constraintTop_toBottomOf="@id/salary"
+                app:layout_constraintStart_toStartOf="parent"
+                android:hint="What is your salary"
+                >
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/allowance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/salary_text"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/allowance"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:paddingStart="10dp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/allowance_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="number"
+                app:layout_constraintTop_toBottomOf="@id/allowance"
+                app:layout_constraintStart_toStartOf="parent"
+                android:hint="What is your allowance"
+                >
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/income_tax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/allowance_text"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/income"
+                android:paddingLeft="10dp"
+                android:paddingTop="15dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent">
+            </TextView>
+
+            <TextView
+                android:id="@+id/income_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toBottomOf="@id/income_tax"
+                app:layout_constraintStart_toStartOf="parent"
+                android:hint="What is your tax"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/income_text"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/amount"
+                android:layout_gravity="center"
+                android:paddingTop="40dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent">
+            </TextView>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/amount"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="110dp"
+                android:text="@string/click"
+                android:layout_marginStart="110dp">
+
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
